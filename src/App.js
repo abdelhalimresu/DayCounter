@@ -9,9 +9,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      startDate: new Date()
-    };
+    this.state = {};
     this.handleChangeStart = this.handleChangeStart.bind(this);
     this.handleChangeEnd = this.handleChangeEnd.bind(this);
   }
@@ -40,6 +38,7 @@ class App extends Component {
                       className="form-control"
                       selected={this.state.startDate}
                       onChange={this.handleChangeStart}
+                      placeholderText="Click to select the start date"
                       id="startDate"
                     />
                 <small id="emailHelp" className="form-text text-muted">Choose a start date.</small>
@@ -50,7 +49,7 @@ class App extends Component {
                       className="form-control"
                       selected={this.state.endDate}
                       onChange={this.handleChangeEnd}
-                      placeholderText="Click to select a date"
+                      placeholderText="Click to select the end date"
                       id="endDate"
                     />
                 <small id="emailHelp" className="form-text text-muted">Choose an end date.</small>
