@@ -1,7 +1,7 @@
 ## Day counter
-A simple single page application that count the number of days between two given dates.
+A simple single page application that counts the number of days between two given dates.
 
-## Run using `npm`
+### Run using npm
 
 ```bash
 # Build
@@ -16,6 +16,6 @@ npm start
 # Build the image
 docker build -t <img_name>:<img_tag> .
 
-# Run container and allow edits to be reflected without the need to start again
+# Run container and allow edits to be reflected without the need to build again
 docker run -v $(pwd)/src:/app/src <img_name>:<img_tag>
 ```
