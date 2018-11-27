@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-## Run using docker
+### Run using docker
 
 ```bash
 # Build the image
